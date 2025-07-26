@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3b7b4e8e9d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header blur-background">
+      <div class="weather">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="main">
+      <div class="link blur-background">
+        <div class="link__component">
+          <a href="https://www.naver.com/"
+            ><i class="fa-solid fa-n fa-lg"></i><span>Naver</span></a
+          >
+        </div>
+        <div class="link__component">
+          <a href="https://www.google.com/"
+            ><i class="fa-brands fa-google fa-lg"></i><span>Google</span></a
+          >
+        </div>
+        <div class="link__component">
+          <a href="https://www.youtube.com/"
+            ><i class="fa-brands fa-youtube fa-lg"></i><span>Youtube</span></a
+          >
+        </div>
+        <div class="link__component">
+          <a href="https://cyber.ewha.ac.kr/"
+            ><i class="fa-solid fa-bookmark fa-lg"></i
+            ><span>Cyber Campus</span></a
+          >
+        </div>
+      </div>
+      <div class="info">
+        <div class="today-info">
+          <h3 class="calendar"></h3>
+          <h3 class="clock"></h3>
+        </div>
+        <form class="login-form hidden">
+          <h4>Hi! What is your name?</h4>
+          <input required type="text" placeholder="My name is..." />
+        </form>
+        <h1 class="welcome-header hidden">HI</h1>
+      </div>
+      <div class="todo">
+        <h3>to-do list</h3>
+        <form class="todo-form">
+          <input type="text" required placeholder="what's your plan?" />
+          <button>submit</button>
+        </form>
+        <ul class="todo-list todo-list--yet">
+          <span class="no-task hidden"
+            >"No tasks for now. Enjoy your time!"</span
+          >
+        </ul>
+        <ul class="todo-list todo-list--done"></ul>
+      </div>
+    </div>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/todayInfo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>

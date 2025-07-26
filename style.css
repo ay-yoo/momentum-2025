@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+@import "reset.css";
+
+.blur-background {
+  background-color: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  border: 2.5px solid #e6d389;
+}
+
+:root {
+  --text-border: -0.8px -0.8px 0 white, 0.8px -0.8px 0 white,
+    -0.8px 0.8px 0 white, 0.8px 0.8px 0 white;
+  --text-shadow: 1px 1px 3px #2f2a35;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/*body*/
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  min-height: calc(100vh - 90px);
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+/*header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  margin: 0px 15px;
+  margin-top: 15px;
+  color: white;
+}
+
+.weather span {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px 10px;
+  text-shadow: var(--text-shadow);
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-shadow: var(--text-shadow);
+}
+.quote span {
+  font-size: 20px;
+  margin: 3px 10px;
+}
+.quote span:last-child {
+  font-size: 15px;
+}
+
+/*link*/
+.link {
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: var(--text-shadow);
+}
+
+.link__component a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.link__component i {
+  margin: 20px 0px;
+}
+
+/*info*/
+.info {
+  width: 100%;
+  margin: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0px 0px 5px #2f2a35;
+}
+.today-info {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calendar {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.clock {
+  font-size: 90px;
+  margin-bottom: 35px;
+}
+
+.login-form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+}
+.login-form input {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.login-form input::placeholder {
+  color: white;
+  opacity: 1;
+}
+.login-form input:focus::placeholder {
+  color: transparent;
+}
+
+.welcome-header {
+  color: white;
+  font-size: 40px;
+}
+
+/*todo*/
+.todo {
+  width: 400px;
+  padding-top: 30px;
+  padding: 0px 30px;
+  background-color: #e6d389;
+  border-radius: 30px;
+}
+.todo h3 {
+  margin-top: 30px;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #2f2a35;
+  font-weight: bold;
+  text-shadow: var(--text-border);
+}
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+}
+.todo-form input {
+  width: 100%;
+  border-bottom: 1px solid white;
+  margin-right: 10px;
+  padding: 8px 0px;
+}
+.todo-form input::placeholder {
+  font-size: 15px;
+}
+.todo-form button {
+  border-radius: 30px;
+  border: none;
+}
+
+.todo-list {
+  padding: 40px 0px;
+  color: #2f2a35;
+}
+.todo-list li {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.todo-list--yet {
+  border-bottom: 1px solid white;
+}
+
+.todo-list--yet button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.todo-list--done span {
+  text-decoration: line-through;
+  color: #2f2a35;
+}
+.todo-list--done button {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
