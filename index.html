@@ -4,74 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://www.ghibli.jp/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/3b7b4e8e9d.js"
       crossorigin="anonymous"
     ></script>
-
-    <title>Document</title>
+    <title>your page</title>
   </head>
   <body>
     <div class="header blur-background">
+      <!--최상단 header -->
       <div class="weather">
+        <!--날씨, 위치-->
         <span></span>
         <span></span>
       </div>
       <div class="quote">
+        <!--랜덤 명언-->
         <span></span>
         <span></span>
       </div>
     </div>
     <div class="main">
-      <div class="link blur-background">
-        <div class="link__component">
+      <!--header 를 제외한 내용이 들어있는 main-->
+      <ul class="link blur-background">
+        <!--바로가기 link 모음-->
+        <li class="link__component">
           <a href="https://www.naver.com/"
             ><i class="fa-solid fa-n fa-lg"></i><span>Naver</span></a
           >
-        </div>
-        <div class="link__component">
+        </li>
+        <li class="link__component">
           <a href="https://www.google.com/"
             ><i class="fa-brands fa-google fa-lg"></i><span>Google</span></a
           >
-        </div>
-        <div class="link__component">
+        </li>
+        <li class="link__component">
           <a href="https://www.youtube.com/"
             ><i class="fa-brands fa-youtube fa-lg"></i><span>Youtube</span></a
           >
-        </div>
-        <div class="link__component">
-          <a href="https://cyber.ewha.ac.kr/"
-            ><i class="fa-solid fa-bookmark fa-lg"></i
-            ><span>Cyber Campus</span></a
+        </li>
+        <li class="link__component">
+          <a href="https://youtu.be/vlBBwAVleg4?si=10iL2WBEX8JdNTQq"
+            ><i class="fa-solid fa-music fa-lg"></i><span>Music</span></a
           >
-        </div>
-      </div>
+        </li>
+      </ul>
       <div class="info">
         <div class="today-info">
+          <!--달력,시간-->
           <h3 class="calendar"></h3>
           <h3 class="clock"></h3>
         </div>
         <form class="login-form hidden">
+          <!--login-->
           <h4>Hi! What is your name?</h4>
           <input required type="text" placeholder="My name is..." />
         </form>
         <h1 class="welcome-header hidden">HI</h1>
       </div>
       <div class="todo">
+        <!--todo-->
         <h3>to-do list</h3>
         <form class="todo-form">
+          <!--todo 입력칸-->
           <input type="text" required placeholder="what's your plan?" />
           <button>submit</button>
         </form>
         <ul class="todo-list todo-list--yet">
+          <!--미완료 task-->
           <span class="no-task hidden"
             >"No tasks for now. Enjoy your time!"</span
           >
         </ul>
         <ul class="todo-list todo-list--done"></ul>
+        <!--완료 task-->
+        <img class="point-img" src="https://www.ghibli.jp/img/totoro.png" />
       </div>
     </div>
 
+    <!--데코용 이미지-->
     <script src="js/greetings.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/todayInfo.js"></script>

@@ -11,7 +11,7 @@
 :root {
   --text-border: -0.8px -0.8px 0 white, 0.8px -0.8px 0 white,
     -0.8px 0.8px 0 white, 0.8px 0.8px 0 white;
-  --text-shadow: 1px 1px 3px #2f2a35;
+  --text-shadow: 1px 1px 10px #2f2a35;
 }
 
 html,
@@ -95,7 +95,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-shadow: 0px 0px 5px #2f2a35;
+  text-shadow: var(--text-shadow);
 }
 .today-info {
   color: white;
@@ -142,6 +142,7 @@ body {
 
 /*todo*/
 .todo {
+  position: relative;
   width: 400px;
   padding-top: 30px;
   padding: 0px 30px;
@@ -162,7 +163,7 @@ body {
 }
 .todo-form input {
   width: 100%;
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
   margin-right: 10px;
   padding: 8px 0px;
 }
@@ -172,6 +173,13 @@ body {
 .todo-form button {
   border-radius: 30px;
   border: none;
+  width: 55px;
+}
+
+.todo-form button:hover {
+  border-radius: 30px;
+  border: 2px solid #2f2a35;
+  cursor: pointer;
 }
 
 .todo-list {
@@ -185,7 +193,7 @@ body {
   font-size: 20px;
 }
 .todo-list--yet {
-  border-bottom: 1px solid white;
+  border-bottom: 2px solid white;
 }
 
 .todo-list--yet button {
@@ -200,7 +208,12 @@ body {
 .todo-list--done button {
   display: none;
 }
-
+.point-img {
+  position: absolute;
+  width: 300px;
+  bottom: 0px;
+  right: -30px;
+}
 .hidden {
   display: none;
 }
