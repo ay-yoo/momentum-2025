@@ -5,7 +5,6 @@ const savedUsername = localStorage.getItem("username"); //스토리지에 저장
 const title = document.querySelector("title"); //탭 제목
 
 function handleLogin(event) {
-  //유저명 submit 시 실행
   event.preventDefault();
 
   const username = loginInput.value;
@@ -15,7 +14,6 @@ function handleLogin(event) {
 }
 
 function showWelcome(username) {
-  //welcome header 보여줌
   const date = new Date();
   const hours = date.getHours();
   if (hours < 12 && hours >= 5) {
@@ -32,7 +30,6 @@ function showWelcome(username) {
   title.innerText = `${username}'s page`;
 }
 
-//가장 먼저 실행됨. 저장된 유저명 있는지 점검
 if (savedUsername === null) {
   //loginform 으로 받기
   loginForm.classList.remove("hidden"); //입력받을 form 을 보여주기
