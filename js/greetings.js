@@ -37,4 +37,5 @@ if (savedUsername === null) {
 } else {
   //welcome 화면 보여주기
   showWelcome(savedUsername);
+  title.innerText = `${savedUsername}'s page`;
 }
